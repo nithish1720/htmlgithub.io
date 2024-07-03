@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('Untitled.jpg') no-repeat center center fixed; 
+            background-size: cover;
+        }
+
+        .login-container {
+            background: url('bg2.jpeg') center/cover no-repeat;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #262626;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .login-container input[type="submit"] {
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #3578e5;
+        }
+
+        .forgot-password {
+            font-size: 12px;
+            margin-top: 10px;
+            color: #262626;
+        }
+
+        .logo-img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <img src="logo2.jpeg" alt="Instagram Logo" class="logo-img">
+    <h2>Instagram</h2>
+    <form action="#" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <br>
+        <input type="password" name="password" placeholder="Password" required>
+        <br>
+        <input type="submit" value="Log In">
+    </form>
+    <p class="forgot-password">Forgot password?</p>
+</div>
+
+</body>
+</html>

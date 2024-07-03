@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>C</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: PeachPuff;
+  border: 1px solid Grey;
+  float: centre;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid Grey;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.city {
+  background-color: DarkSeaGreen;
+  color: white;
+  border: 2px solid white;
+  margin: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  float: centre;
+}
+
+.cite {
+  background-color: Brown;
+  color: white;
+  border: 2px solid white;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 80px;
+  float: right;
+}
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+ position: fixed; /* Make it stick, even on scroll */
+  float: right;
+  colour:white;
+  width: 25%;
+  height: 1970px; /* only for demonstration, should be removed */
+  background: SeaShell;
+  padding: 20px;
+  border: 1px solid Grey;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article1 {
+  float:right;
+  padding: 20px;
+  width: 75%;
+  background-color: #B0E0E6;
+  height: 650px; /* only for demonstration, should be removed */
+  border: 1px solid Grey;
+}
+
+article2 {
+  float: right;
+  padding: 20px;
+  width: 75%;
+  background-color: #DEB887;
+  border: 1px solid Grey;
+  height: 670px; /* only for demonstration, should be removed */
+}
+
+article3 {
+  float: right;
+  padding: 20px;
+  width: 75%;
+  border: 1px solid Grey;
+  background-color: #FFEBCD;
+  height: 650px; /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<section>
+  <nav>
+  <center>
+  <p>C PROGRAM</p>
+  </center>
+   <p> topics to learn,</p>
+  <center>
+
+<ul>
+  <li><a href="#C1">C Introduction</a></li>
+  <li><a href="#C2">C Tutorial</a></li>
+  <li><a href="#C3">C Variables</a></li>
+</ul>
+</center>
+  </nav>
+  
+  <article1>
+    <h1></h1>
+    <div class="cite">
+    <h2 id="C1">C Introduction</h2>
+    </div>
+<p>C is a powerful and widely-used programming language known for its efficiency and flexibility. Developed in the early 1970s, C has influenced many other programming languages and remains one of the most popular choices for system-level programming and embedded systems. C is valued for its close-to-the-machine capabilities, allowing developers to write highly efficient code that directly interacts with hardware. Its syntax, while terse, provides a robust framework for building complex programs, making it suitable for everything from operating systems to applications and games. Key features of C include its ability to manage memory directly through pointers, its simple and efficient control structures (like loops and conditionals), and its rich standard library that provides functions for a wide range of tasks. C is also known for its portability, as compilers are available for nearly every system architecture. Despite its age, C remains relevant due to its performance benefits and the fact that it underpins many modern languages and operating systems. Learning C provides a solid foundation in programming principles and a deeper understanding of how software interacts with hardware, making it a valuable skill for developers.
+<center>
+<img src="images2.jpg" alt="c" width="200" height="145" float="centre">
+</center>
+</p>
+</article1>
+
+<article2>
+
+
+<div class="cite">
+    <h2 id="C2">C Tutorial</h2>
+    </div>
+<p>A C tutorial is essential for beginners to grasp the fundamentals of programming in this versatile language. Start by installing a C compiler like GCC (GNU Compiler Collection) on your system. Begin with basic concepts such as variables (int, float), data types (char, double), and constants. Learn how to use control structures like if-else statements, loops (for, while), and switch-case for decision-making and iterative tasks. Understand how functions work, including how to define them, pass parameters, and return values. Explore arrays for handling collections of data, along with pointers for direct memory manipulation and efficient resource management. Master input/output operations using functions like scanf and printf. Delve into more advanced topics such as structures and unions for organizing complex data, enums for defining symbolic constants, and typedef for creating custom data types. Learn about dynamic memory allocation with malloc and free, crucial for managing memory in larger applications. Practice writing simple programs to reinforce concepts like sorting algorithms or basic data manipulation tasks. Refer to online resources and textbooks like "The C Programming Language" by Kernighan and Ritchie for deeper insights. Regular practice and experimentation are key to mastering C programming effectively.</p>
+<center>
+<img src="images2.jpg" alt="c" width="200" height="145" float="centre">
+</center>
+</article2>
+
+<article3>
+
+<div class="cite">
+   <h2 id="C3">C Variables</h2>
+    </div>
+<p>In C programming, variables are fundamental entities used to store and manipulate data within a program. They are placeholders for values that can change during program execution. Variables in C must be declared before they can be used. A declaration specifies the variable's data type (such as int, float, char) and optionally its initial value. For example: ```c int age; // declaration of an integer variable 'age' float pi = 3.14; // declaration and initialization of a float variable 'pi' char grade = 'A'; // declaration and initialization of a character variable 'grade' ``` Categorically, variables in C can be categorized into several types: 1. **Integer variables**: Used for whole numbers (int). 2. **Floating-point variables**: Used for numbers with decimal points (float, double). 3. **Character variables**: Used for storing individual characters (char). 4. **Derived data types**: Arrays (collections of variables of the same type), pointers (variables that store memory addresses), and structures (custom data types composed of multiple variables). Variables can be manipulated using assignment operators (=) to assign values and arithmetic operators (+, -, *, /, %) for mathematical operations. They are essential for storing inputs from users, intermediate results in calculations, and outputs for display or further processing within programs. Understanding variables is foundational in C programming, enabling developers to effectively manage and manipulate data throughout the execution of their programs.
+</p>
+<center>
+<img src="images2.jpg" alt="c" width="200" height="145" float="centre">
+</center>
+  </article3>
+</section>
+
+
+
+</body>
+</html>
