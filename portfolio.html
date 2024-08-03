@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #e8daef;
+        }
+        header {
+            background:  #bb8fce  ;
+            color: black;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            margin-top: 1em;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #b2babb;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 4em 0;
+        }
+        .hero-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 15px solid #444;
+            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .hero-pic img {
+            height: 100%;
+            width: 100%;
+            transition: transform 0.5s;
+        }
+        .hero-pic img:hover {
+            transform: scale(1.2);
+        }
+        .intro {
+            text-align: center;
+            background: #f5b7b1;
+            color: black;
+            padding: 2em 1em;
+            border-radius: 8px;
+            margin-bottom: 2em;
+        }
+        .skills, .projects, .education, .contact-form {
+            background: #d2b4de;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+        .skills ul, .education ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills p, .education p {
+            margin: 0.5em 0;
+        }
+        .projects .project-item {
+            margin-bottom: 1.5em;
+        }
+        .projects .project-item h3 {
+            margin: 0 0 0.5em;
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 2em);
+            padding: 1em;
+            margin: 0.5em 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .contact-form input[type="submit"] {
+            background: #282c34;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form input[type="submit"]:hover {
+            background: #20232a;
+        }
+        footer {
+            background:  #abb2b9  ;
+            color: black;
+            text-align: center;
+            padding: 1em;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 0;
+            }
+            nav a {
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <a href="#intro">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <br></br>
+    <center>
+        <div class="hero-pic">
+            <img src="cvv.jpeg" alt="profile pic">
+        </div>
+        <div class="hero-text">
+            <h5>Hi, I'm <span class="input"></span></h5>
+            <h1>Nithishkumar</h1>
+        </div>
+    </center>
+    <br></br>
+    <div class="container">
+        <section id="intro" class="intro">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Welcome to my portfolio! Here, I showcase my passion for core through diverse projects and skills. I strive to innovate and excel, combining creativity with technical expertise. Explore how my experience and dedication can contribute to your projects and initiatives.</p>
+        </section>
+        
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <p>1. Web Development</p>
+                <p>2. C Programming</p>
+                <p>3. Python</p>
+                <p>4. Arduino</p>
+                <p>5. Program Logic Controller</p>
+            </ul>
+        </section>
+        
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>IOT Based Automatic Watering System For Gardening</h3>
+                <p>Monitoring plant health is very important for its fast growth. In this busy world, people usually forget to water their plants which leads to bad growth and health of their plants. For ensuring complete development of plants it is necessary to develop proper surrounding conditions in which plants grow. Not everyone has enough time to take care of their plant in the most efficient way. The IoT Module will monitor the moisture of the soil using the moisture sensor, surrounding temperature, humidity, and brightness.</p>
+                <center>
+                    <img src="io.jpg" width="160" height="105" alt="Project Image">
+                </center>
+                <p>Monitoring plant health is very important for its fast growth. In this busy world, people usually forget to water their plants which leads to bad growth and health of their plants. For ensuring complete development of plants it is necessary to develop proper surrounding conditions in which plants grow. Not everyone has enough time to take care of their plant in the most efficient way. The IoT Module will monitor the moisture of the soil using the moisture sensor, surrounding temperature, humidity, and brightness.</p>
+            </div>
+          
+        </section>
+        
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <ul>
+                <p><strong>Diploma in Electrical and Electronics Engineering.</strong></p>
+                <p><strong>Bachelour of Engineering in Electrical and Electronics Engineering.</strong</p>
+                <p><strong>Certification in Arduino,PLC,C,Python.</strong></p>
+               
+            </ul>
+        </section>
+        
+    
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nithishkumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
